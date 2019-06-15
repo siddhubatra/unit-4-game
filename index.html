@@ -9,30 +9,44 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="assets/javascript/game.js"></script>
 </head>
 
 <body>
     <div class="contianer">
         <div class="row">
             <div class="col">
+                <p>The target number is: </p>
                 <div id="targetNum"></div>
             </div>
             <div class="col">
-                <div id="wins"></div>
+                <p>Your wins: </p>
+                <div id="wins">0</div>
             </div>
             <div class="col">
-                <div id="losses"></div>
+                <p>Your losses: </p>
+                <div id="losses">0</div>
             </div>
             <div class="col">
-                <div id="accumScore"></div>
+                <p>Your accumulated score: </p>
+                <div id="accumScore">0</div>
             </div>
-
-
-
-
-
-
         </div>
+
+        <div class="row">
+            <div class="col-3"> <img class="img-fluid" id="gem1" src="assets/images/red-gemstone.jpg"
+                    alt="first crystal"> </div>
+            <div class="col-3"> <img class="img-fluid" id="gem2" src="assets/images/blue-gemstone.jpg"
+                    alt="second crystal">
+            </div>
+            <div class="col-3"> <img class="img-fluid" id="gem3" src="assets/images/green-gemstone.jpg"
+                    alt="third crystal">
+            </div>
+            <div class="col-3"> <img class="img-fluid" id="gem4" src="assets/images/purple-gemstone.jpg"
+                    alt="fourth crystal">
+            </div>
+        </div>
+
     </div>
 
 </body>
