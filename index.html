@@ -13,26 +13,45 @@
 </head>
 
 <body>
-    <div class="contianer">
+    <div class="container text-center">
         <div class="row">
             <div class="col">
-                <p>The target number is: </p>
-                <div id="targetNum"></div>
-            </div>
-            <div class="col">
-                <p>Your wins: </p>
-                <div id="wins">0</div>
-            </div>
-            <div class="col">
-                <p>Your losses: </p>
-                <div id="losses">0</div>
-            </div>
-            <div class="col">
-                <p>Your accumulated score: </p>
-                <div id="accumScore">0</div>
+                <h1 class="display-3" id="displayInfo">Click the gems to play! </h1>
+                <h2>Gems are assigned random values. Clicking the gems adds to the accumulated value. Try to get to the
+                    target number - make sure to not go over though, or it's game over!
+                </h2>
             </div>
         </div>
+        <div class="row">
+            <div class="col">
+                <h3>The target number is: </h3>
+            </div>
+            <div class="col">
+                <h3>Your wins: </h3>
+            </div>
+            <div class="col">
+                <h3>Your losses: </h3>
+            </div>
+            <div class="col">
+                <h3>Your accumulated score: </h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="display-2" id="targetNum"></h1>
+            </div>
+            <div class="col">
+                <h1 class="display-2" id="wins">0</h1>
+            </div>
+            <div class="col">
+                <h1 class="display-2" id="losses">0</h1>
+            </div>
+            <div class="col">
+                <h1 class="display-2" id="accumScore">0</h1>
+            </div>
 
+
+        </div>
         <div class="row">
             <div class="col-3"> <img class="img-fluid" id="gem1" src="assets/images/red-gemstone.jpg"
                     alt="first crystal"> </div>
@@ -46,7 +65,6 @@
                     alt="fourth crystal">
             </div>
         </div>
-
     </div>
 
 </body>

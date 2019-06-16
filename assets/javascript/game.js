@@ -37,6 +37,7 @@ $(document).ready(function () {
         if (accumScore == targetNum) {
             wins++;
             $("#wins").text(wins);
+            $("#displayInfo").text("You won! Keep it going, brodie!").addClass("bg-success").removeClass("bg-danger");
             targetNum = Math.floor(Math.random() * 102) + 19;
             $("#targetNum").text(targetNum);
             accumScore = 0;
@@ -54,6 +55,7 @@ $(document).ready(function () {
         else if (accumScore > targetNum) {
             losses++;
             $("#losses").text(losses);
+            $("#displayInfo").text("You lost! Try again, holmes!").addClass("bg-danger").removeClass("bg-success");
             targetNum = Math.floor(Math.random() * 102) + 19;
             $("#targetNum").text(targetNum);
             accumScore = 0;
